@@ -1,6 +1,6 @@
 // src/sections/Servicos.jsx
 import React from 'react';
-import '../styles/servicos.css';
+import '../styles/Servicos.css';
 
 function Servicos() {
   return (
@@ -25,3 +25,4 @@ function Servicos() {
 }
 
 export default Servicos;
+
