@@ -1,5 +1,5 @@
 import { Outlet, useOutletContext } from 'react-router-dom';
-import Sidebar from '../components/dashboard/Sidebar';
+import Sidebar from '../components/dashboard/Sidebar.jsx';
 import '../styles/DashboardLayout.css';
 
 function DashboardLayout() {
@@ -15,5 +15,6 @@ function DashboardLayout() {
     </div>
   );
 }
+
 
 export default DashboardLayout;
