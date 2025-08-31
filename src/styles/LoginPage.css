@@ -1,0 +1,56 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--bg-main);
+}
+
+.login-form {
+  padding: 2rem;
+  background: var(--bg-surface);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-form h2 {
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.input-group {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary);
+}
+
+/* Estilizando o input para ser consistente com o .form-input global */
+.input-group input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 0.875rem;
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  box-sizing: border-box;
+}
+
+.input-group input:focus {
+  outline: 2px solid var(--accent-primary);
+  border-color: transparent;
+}
+
+/* O botão já usa as classes .btn e .btn-primary do index.css.
+   Apenas garantimos que ele ocupe 100% da largura dentro do formulário. */
+.login-form .btn {
+  width: 100%;
+}

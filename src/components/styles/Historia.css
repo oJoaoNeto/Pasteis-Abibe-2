@@ -1,0 +1,23 @@
+/* src/styles/Historia.css */
+.historia-section {
+  background-color: var(--bg-light);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.historia-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.historia-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--brand-red);
+}
+
+.historia-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-dark);
+}

@@ -1,0 +1,55 @@
+/* src/styles/Produtos.css */
+.produtos-section {
+  background-color: var(--bg-dark-section);
+  color: var(--text-light);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.produtos-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: var(--brand-yellow);
+}
+
+.produtos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.produto-card {
+  background-color: #3a3a3a;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.produto-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.produto-card h3 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--brand-yellow);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.produto-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: rgba(255, 255, 255, 0.884);
+}
+
+.produto-preco {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--brand-yellow);
+}

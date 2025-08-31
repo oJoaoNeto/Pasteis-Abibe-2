@@ -1,0 +1,73 @@
+/* src/styles/ProducaoDiaria.css */
+
+.producao-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.producao-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Padrão para telas pequenas (uma coluna) */
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+/* Em telas maiores (min-width: 768px), o grid terá duas colunas */
+@media (min-width: 768px) {
+  .producao-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.registro-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.estoque-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.estoque-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+/* Remove a borda do último item da lista */
+.estoque-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.estoque-item-nome {
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.estoque-item-quantidade {
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px; /* Formato de pílula/badge */
+  background-color: var(--accent-primary);
+  color: white;
+}

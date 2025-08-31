@@ -1,0 +1,67 @@
+/* src/styles/Insumos.css */
+
+.insumos-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* Espaço entre o título, o form e a tabela */
+}
+
+.add-form-card {
+  /* A classe .card já vem do index.css */
+  /* Esta classe é para o container do formulário */
+}
+
+.add-form {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os itens quebrem para a linha de baixo em telas menores */
+  align-items: center;
+  gap: 1rem; /* Espaço entre os inputs e o botão */
+}
+
+.table-card {
+   /* Usamos .card para o estilo base, mas podemos querer adicionar um overflow */
+   overflow-x: auto; /* Adiciona barra de rolagem horizontal em telas pequenas */
+}
+
+.insumos-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.insumos-table thead {
+  background-color: #f8fafc;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.insumos-table th, 
+.insumos-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+  white-space: nowrap; /* Evita que o conteúdo da célula quebre linha */
+}
+
+.insumos-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.insumos-table .actions-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Espaço entre os botões de ação */
+}
+
+/* Estilo para os inputs dentro da tabela no modo de edição */
+.insumos-table input {
+  width: 100%;
+  min-width: 80px; /* Largura mínima para não ficar muito pequeno */
+}
+body.dark-mode .insumos-table tbody tr:hover {
+  background-color: var(--border-color); /* A variável --border-color no modo escuro é um cinza (#334155) que funciona perfeitamente para o hover */
+}
+body.dark-mode .insumos-table thead {
+  background-color: var(--bg-main); /* Usamos a cor de fundo mais escura da página */
+  color: var(--text-secondary);     /* A cor do texto já usa variável, então se ajusta bem */
+}

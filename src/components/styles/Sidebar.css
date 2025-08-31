@@ -1,0 +1,100 @@
+/* src/components/styles/Sidebar.css */
+
+.sidebar {
+  background-color: var(--sidebar-bg);
+  color: var(--sidebar-text);
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1rem;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.sidebar-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid var(--brand-yellow);
+}
+
+.sidebar-title {
+  font-size: 1.25rem;
+  color: var(--sidebar-text);
+  margin: 0;
+}
+
+.sidebar-nav {
+  flex-grow: 1;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  color: var(--sidebar-text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.sidebar-link:hover {
+  background-color: var(--sidebar-item-active-bg);
+  color: var(--sidebar-text-hover);
+}
+
+/* Estilo para o link ativo, aplicado automaticamente pelo NavLink */
+.sidebar-link.active {
+  background-color: var(--sidebar-item-active-bg);
+  color: var(--sidebar-text-hover);
+  font-weight: 700;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+}
+
+.theme-switcher {
+  width: 100%;
+  margin-top: 0.5rem; /* Adiciona um espaço acima do botão de tema */
+  background: none;
+  border: none;
+  cursor: pointer;
+  /* Reutilizando o estilo do .sidebar-link para consistência */
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  color: var(--sidebar-text);
+  font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.theme-switcher:hover {
+  background-color: var(--sidebar-item-active-bg);
+  color: var(--sidebar-text-hover);
+}

@@ -1,0 +1,36 @@
+/* src/styles/Servicos.css */
+.servicos-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.servicos-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: var(--brand-red);
+}
+
+.servicos-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.servico-item {
+  flex-basis: 300px;
+  padding: 20px;
+}
+
+.servico-item h3 {
+  font-size: 1.8rem;
+  color: var(--brand-red);
+  margin-bottom: 15px;
+}
+
+.servico-item p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
